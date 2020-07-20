@@ -1,0 +1,26 @@
+{
+  "name": "burger-logger",
+  "version": "1.0.0",
+  "description": "app to log burgers",
+  "main": "server.js",
+  "dependencies": {
+    "express-handlebars": "^5.1.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whiterice2020/Burger-Logger.git"
+  },
+  "author": "Paul DelPadre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whiterice2020/Burger-Logger/issues"
+  },
+  "homepage": "https://github.com/whiterice2020/Burger-Logger#readme"
+}
