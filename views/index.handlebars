@@ -1,26 +1,26 @@
-<h1>Burger Time!</h1>
+<h1>Create your custom Burger!!!!</h1>
 
-<h2>Burgers Ordered!</h2>
+<h2>Burgers Ready</h2>
 
 <ul>
-  {{#each burgers}}
-    {{#unless sleepy}}
-      {{> burgers/burger-block sleep=true}}
+  {{#each burger}}
+    {{#unless devour}}
+      {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers are ordered!</h2>
+<h2>Burgers Ready for Pickup!</h2>
 
 <ul>
   {{#each burgers}}
-    {{#if sleepy}}
-      {{> burgers/burger-block sleep=false}}
+    {{#if devour}}
+      {{> burgers/burger-block devour=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Burger</h2>
+<h2>Order a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -29,10 +29,10 @@
   </div>
 
   <div class="form-group">
-    <label for="sleepy">Order?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Order a Burger!<br>
-    <input type="radio" name="sleepy" value="0"> Hold for later!
+    <label for="sleepy">When do you want your order?</label><br>
+    <input type="radio" name="sleepy" value="1" checked> Hold for Pikcup!<br>
+    <input type="radio" name="sleepy" value="0"> Order it now!
   </div>
 
-  <button type="submit">Order a Burger</button>
+  <button type="submit">Add Order</button>
 </form>
