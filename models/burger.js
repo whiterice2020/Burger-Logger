@@ -10,6 +10,7 @@ var burger = {
   // The variables cols and vals are arrays.
   create: function(cols, vals, cb) {
     orm.create("burgers", cols, vals, function(res) {
+      console.log("model burgerjs" + res);
       cb(res);
     });
   },

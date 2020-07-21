@@ -16,13 +16,14 @@ router.get("/", function(req, res) {
   });
 });
 
-router.post("/api/burger", function(req, res) {
+router.post("/api/burgers", function(req, res) {
   burger.create([
     "name", "devour"
   ], [
     req.body.name, req.body.devour
   ], function(result) {
     // Send back the ID of the new quote
+    console.log("controller " + res);
     res.json({ id: result.insertId });
   });
 });
