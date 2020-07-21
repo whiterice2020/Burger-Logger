@@ -1,11 +1,12 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
+  // $(".delete-burger").on("click", function(event) {
   $(".change-sleep").on("click", function(event) {
     var id = $(this).data("id");
     var newSleep = $(this).data("newsleep");
 
     var newSleepState = {
-      sleepy: newSleep
+      devour: newSleep
     };
 
     // Send the PUT request.
@@ -45,6 +46,7 @@ $(function() {
 
   $(".delete-burger").on("click", function(event) {
     var id = $(this).data("id");
+    console.log("delete press" , id);
 
     // Send the DELETE request.
     $.ajax("/api/burgers/" + id, {

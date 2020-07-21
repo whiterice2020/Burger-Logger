@@ -13,7 +13,7 @@
 <h2>Burgers Ready for Pickup!</h2>
 
 <ul>
-  {{#each burgers}}
+  {{#each burger}}
     {{#if devour}}
       {{> burgers/burger-block devour=false}}
     {{/if}}
@@ -30,7 +30,7 @@
 
   <div class="form-group">
     <label for="sleepy">When do you want your order?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Hold for Pikcup!<br>
+    <input type="radio" name="sleepy" value="1"> Hold for Pickup!<br>
     <input type="radio" name="sleepy" value="0"> Order it now!
   </div>
 
