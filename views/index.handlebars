@@ -3,8 +3,8 @@
 <h2>Burgers to Eat!!!</h2>
 
 <ul>
-  {{#each burgers}}
-    {{#unless devoured}}
+  {{#each burger}}
+    {{#unless devour}}
       {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
@@ -13,8 +13,8 @@
 <h2>Hamburgers Devoured</h2>
 
 <ul>
-  {{#each burgers}}
-    {{#if Devour}}
+  {{#each burger}}
+    {{#if devour}}
       {{> burgers/burger-block devour=false}}
     {{/if}}
   {{/each}}
@@ -28,11 +28,11 @@
     <input type="text" id="ca" name="name">
   </div>
 
-  <div class="form-group">
-    {{!-- <label for="sleepy">Sleepy?</label><br> --}}
-    {{!-- <input type="radio" name="sleepy" value="1" checked> Sleepy!<br> --}}
-    {{!-- <input type="radio" name="sleepy" value="0"> Awake --}}
-  </div>
+  {{!-- <div class="form-group">
+    <label for="sleepy">Sleepy?</label><br>
+    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
+    <input type="radio" name="sleepy" value="0"> Awake
+  </div> --}}
 
   <button type="submit">Add Your Burger</button>
 </form>
