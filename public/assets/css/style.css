@@ -20,14 +20,19 @@ li {
 
 body {
   background-color: gainsboro;
+  background-image: url(https://images.pexels.com/photos/1199956/pexels-photo-1199956.jpeg?cs=srgb&dl=burger-with-spinach-and-cheese-1199956.jpg&fm=jpg);
+  /* background-repeat: inherit; */
+  background-position: center;
 }
 
 h1 {
   text-align: center;
+  color: aliceblue;
 }
 
 h2 {
   text-align: center;
+  color: aliceblue;
 }
 
 .form-group{
@@ -37,8 +42,11 @@ h2 {
 
 .create-form{
   text-align: center;
+  color: aliceblue;
+  font-size: 30px;
 }
 
 ul{
   text-align: center;
 }
+
